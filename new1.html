@@ -1,0 +1,170 @@
+<?php
+$manufact=$_POST['manufact'];
+$bodystyle=$_POST['bodystyle'];
+$name=$_POST['name'];
+$price=$_POST['price'];
+$fuel=$_POST['fuel'];
+$transmission=$_POST(['transmission'];
+
+while($dtls=mysql_fetch_array($qry))
+	{
+	$body=$dtls['bodystyle'];
+	$carname=$dtls['name'];	
+	$price1=$dtls['price'];
+    $transmission1=$dtls['transmission'];
+    $fuel1=$dtls['fuel'];
+	
+    
+    if($body==$bodystyle && $carname==$name && $price1==$price && $transmission==$transmission1 && $fuel1==fuel )
+
+<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<title>DMS</title> 
+	<meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />	    
+	<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+	<meta property="og:title" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	
+	<link rel="prefetch" href="images/zoom.png">
+	<style type="text/css">
+		.button {
+		width: 20%;
+		border-radius: 10px;
+		background-color:#fff;
+		hover:#fff;
+		margin-bottom:10px;
+		margin-top:10px;
+	}
+	.login {
+	width:100%;
+	
+	}
+		</style>
+</head>
+
+<body>
+ <div class="slide story" id="slide-5" >
+	
+						
+	<div class="header">
+					
+				<h1 class="font-semibold">FYC</h1>
+					<h3 class="font-thin"><span class="font-semibold">Find Your Car</span></h3><br><br>
+					
+				</div>
+	//<div class="header-menu">
+	
+					
+					<table width="100%" align="center" class="menubar">
+                    </table>
+
+	
+	//</div>
+	
+	
+	<!-- === MAIN Background === -->
+
+	
+	<div class="slide story" id="slide-5" >
+	<div class="col-12">
+					
+					
+					<h4 class="font-thin"><span class="font-semibold">Search Here</span></h4>
+					
+					<br>
+				</div><!-- /col-12 -->
+	<form method="POST" action="next.php" >
+	
+<table width="50%" border="0" align="center">
+ <tr>
+    <td width="5%" height="41">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="20%" align="left"><span class="style2">
+      <label>Body Style</label>
+    </span></td>
+    <td width="50%" align="left"> <select name="bodystyle" id="bodystyle" style="width:200" >
+				    <option value="">--Select--</option>
+					 <option value="s">SUV</option>
+                     <option value="h">HATCH-BACK</option>
+                     <option value="se">SEDAN</option>
+                     <option value="m">MINI-VAN</option>
+                     <option value="c">COUPE</option>
+                     <option value="p">PICK-UP</option>
+                     <option value="co">CONVERTIBLE</option>
+                     <option value="w">WAGON</option>
+					 
+					 
+				   
+				    </select></td>
+  </tr>
+  <tr>
+    <td width="5%" height="41">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="20%" align="left"><span class="style2">
+      <label>Price</label>
+    </span></td>
+    <td width="50%" align="left"><input name="price" type="text" class="new"></td>
+  </tr>
+  <tr>
+    <td height="51">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="left"><span class="style2">
+      <label>Name</label>
+    </span></td>
+    <td align="left"><input name="name" type="text" class="new"></td>
+  </tr>
+  <tr>
+    <td height="52">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="left"><span class="style2">
+      <label>Manufacturer</label>
+    </span></td>
+    <td align="left"><input name="manufact" type="text" class="new"></td>
+  </tr>
+  <tr>
+    <td height="41">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="left"><span class="style2">
+      <label>Transmission Type</label>
+    </span></td>
+    <td align="left"><input name="transmission" type="text" class="new"></td>
+  </tr>
+  <tr>
+    <td height="40">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="left"><span class="style2">
+      <label>Fuel Type</label>
+    </span></td>
+    <td width="50%" align="left"><select name="fuel" type="text"style="width:200" >
+				    <option value="">--Select--</option>
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="cng">CNG</option>
+                    </td>
+  </tr>
+  <tr>
+   
+    <td colspan="4"><input name="btn" type="submit" class="button" id="GO" value="search"></td>
+  </tr>
+</table>
+	
+	</form>
+	</div>
+	
+
+</body>
+
+</html>
+?>
